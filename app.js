@@ -109,7 +109,7 @@ function renderProject(p){
 </div>
 
 <div class="p-gallery">${galleryHTML(p)}</div>
-<div class="p-cta"><span>Máš projekt, který potřebuje vlastní vizuální svět?</span><a class="text-link" href="mailto:matyas@folprecht.net">Pojďme se o něm pobavit <span aria-hidden="true">↗</span></a></div>
+<div class="p-cta"><span>Máš projekt, který potřebuje vlastní vizuální svět?</span><a class="text-link" href="mailto:matyas.folprecht@me.com">Pojďme se o něm pobavit <span aria-hidden="true">↗</span></a></div>
 </div>
 <a class="next" href="#projekt/${esc(next.id)}" aria-label="Další projekt: ${esc(next.title)}"><div class="next-inner wrap"><div class="next-text"><span class="label">Další projekt / ${esc(labels[next.category])}</span><h2 class="next-title"><span>${esc(next.title)}</span><span class="next-arrow" aria-hidden="true">→</span></h2></div><div class="next-media${isPortrait(nim)?' contain':''}"><img class="lazy" src="${esc(nim.thumb)}" alt="" width="${nim.thumbWidth||nim.width}" height="${nim.thumbHeight||nim.height}" loading="lazy" decoding="async" onload="${LOADED}" onerror="${LOADED}"></div></div></a>`;
   document.title=p.title+' — Matyáš Folprecht';
